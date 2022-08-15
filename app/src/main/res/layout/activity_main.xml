@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Body Mass Index Calculator"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/baslik2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Weight(in Kg)"
+            android:textColor="#000000"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/inputWeight"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/baslik2"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:inputType="number">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Height (in cm)"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/baslik3">
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/inputHeight"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:inputType="number">
+
+        </EditText>
+
+    </LinearLayout>
+
+
+<Button
+    android:id="@+id/buttonCalculate"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="15dp"
+    android:text="CALCULATE"></Button>
+
+    <TextView
+        android:id="@+id/gorunmez1"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:text="The BMI is"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/gorunmez2"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/gorunmez3"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonRecalculate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="RECALCULATE"
+        android:visibility="invisible"
+        ></Button>
+
+
+</LinearLayout>
